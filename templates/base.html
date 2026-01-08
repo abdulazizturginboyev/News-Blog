@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abdulaziz Blog</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+
+<header>
+    <h1>
+        <a href="{% url 'home' %}">Abdulaziz Blog</a>
+    </h1>
+</header>
+
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+
+</body>
+</html>
