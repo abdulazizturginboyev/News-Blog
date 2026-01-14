@@ -3,8 +3,8 @@
 {% block content %}
     <h1>Postni o'chirish</h1>
     <form action="" method="post">
-    {% csrf_token %}
-    <p>"{{ post.title }}" Postini o'chiraymi</p>
-    <input type="submit" value="Ochirish">
+        {% csrf_token %}
+        <p>"{{ post.title }}" postini o‘chiraymi?</p>
+        <input type="submit" value="Ochirish" class="btn btn-danger">
     </form>
 {% endblock content %}
